@@ -21,8 +21,8 @@ error__password_mismatch="Passwords don't match";
 AP_YES="Yes";
 AP_NO="No";
 
-prompt_action='dmenu -P -p "$AP_PROMPT"';
-confirm_action='echo -e "$AP_YES\n$AP_NO" | dmenu -p "$AP_PROMPT"';
+prompt_action='kickoff --from-stdin --stdout -p "$AP_PROMPT" -c ~/.config/kickoff/hidepass.toml';
+confirm_action='printf "$AP_YES\n$AP_NO" | kickoff --from-stdin --stdout -p "$AP_PROMPT" ';
 display_error_action='notify-send -a "Pinentry" "$AP_ERROR"';
 
 # :: Prompt string (default if empty)
@@ -211,8 +211,8 @@ Options:
 
 CMD will be executed by sh(1). The defaults are:
 
-prompt ='dmenu -P -p "$prompt_string"';
-confirm ='echo -e "$AP_YES\n$AP_NO" | dmenu -p "$prompt_string"';
+prompt ='kickoff --from-stdin --stdout -p "$prompt_string" ';
+confirm ='printf "$AP_YES\n$AP_NO" | kickoff --from-stdin" -p "$AP_PROMPT" -c ~/.config/kickoff/hidepass.toml';
 error-command ='notify-send -a "Pinentry" "$error__password_mismatch"';
 
 Standard pinentry options
