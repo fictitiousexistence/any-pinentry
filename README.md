@@ -17,5 +17,3 @@ Forked from [any-pinentry](https://github.com/phenax/any-pinentry) and modified 
 5. Edit `~/.gnuph/gpg-agent.conf` (or create it) and add the line `pinentry-program /<path-to-your-clone>/anypinentry`
 6. Run `gpg-agent reload` to reload the config or logout and log back in
 7. Gpg should now be using your prefered program for pinentry
-
-## Config
