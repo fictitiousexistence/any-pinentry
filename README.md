@@ -1,8 +1,8 @@
 # AnyPinentry
 AnyPinentry is a wrapping interface to all kinds of prompts instead of gnupg's pinentry.
-You can now use any interface for password and confirmation prompts (`dmenu`, `rofi`, `read`, `systemd-ask-password`, `curses`, `etc`).
+Forked from [any-pinentry](https://github.com/phenax/any-pinentry) and modified for kickoff- rofi/dmenu/bemenu like launcher in rust.
 
-> Note: This is NOT a complete replacement for pinentry programs but it should cover most use-cases. Report any issues you face so the program can be improved
+> Note: This is NOT a complete replacement for pinentry programs but it should cover most use-cases. 
 
 ## Dependencies
 * sh
