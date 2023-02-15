@@ -1,0 +1,26 @@
+# space between window border and the content in pixel
+padding = 20
+
+fonts = ['Noto Sans Mono']     # list of otf or ttf fonts. later elements work as fallback
+font_size = 12.0
+
+
+[colors]
+# color format: rgb or rgba, if transparency is desired
+background = '#000000fa'
+prompt = '#abb2bfff'
+text = '#00000000'          # for search results
+text_query = '#00000000'    # for the search query
+text_selected = '#00000000' # for the currently selected result
+
+[keybindings]
+# keybindings syntax: ctrl/shift/alt/logo as modifiers and a key joined by '+' signs
+# A list of available keys can be found here: https://docs.rs/crate/x11-keysymdef/0.2.0/source/src/keysym.json
+paste = ["ctrl+v"]
+execute = ["KP_Enter", "Return"]
+delete = ["KP_Delete", "Delete", "BackSpace"]
+delete_word = ["ctrl+KP_Delete", "ctrl+Delete", "ctrl+BackSpace"]
+complete = ["Tab"]
+nav_up = ["Up"]
+nav_down = ["Down"]
+exit = ["Escape"]
